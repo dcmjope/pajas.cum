@@ -10,6 +10,37 @@ var tiempo = 0
 
 function holaclick() {
 
+fetch('https://www.cloudflare.com/cdn-cgi/trace', ''
+)
+.then(response => console.log(JSON.stringify(response))
+
+
+)
+
+
+
+
+
+
+
+
+
+
+/*
+function(data){
+  data = data.trim().split('\n').reduce(function(obj, pair){
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  },
+  {}
+  );
+  console.log(data)
+}
+*/
+
+
+
+
     
 
 
@@ -43,10 +74,7 @@ switch (numclicks) {
 
 
 
-    $.getJSON('http://www.geoplugin.net/json.gp', function(data) {
-        console.log(JSON.stringify(data, null, 2));
-      });
-
+   
 
 
 
@@ -74,10 +102,6 @@ switch (numclicks) {
 
 
 
-function text(url) {
-    return fetch(url).then(res => res.text());
-  }
-  
 
 
 
