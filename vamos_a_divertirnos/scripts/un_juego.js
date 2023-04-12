@@ -10,13 +10,11 @@ var tiempo = 0
 
 function holaclick() {
 
-fetch('https://www.cloudflare.com/cdn-cgi/trace', ''
-)
+fetch('https://www.cloudflare.com/cdn-cgi/trace')
 .then(response => console.log(JSON.stringify(response))
-
+.then(console.log(response))
 
 )
-
 
 
 
